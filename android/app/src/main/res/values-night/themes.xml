@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.SahaRez" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Marka Renkleri -->
+        <item name="colorPrimary">@color/saha_yesili_parlak</item>
+        <item name="colorSecondary">@color/saha_yesili_vurgu</item>
+
+        <!-- Arka Plan ve Yüzeyler -->
+        <item name="android:windowBackground">@color/dark_arkaplan</item>
+        <item name="colorSurface">@color/dark_yuzey</item>
+        <item name="colorSurfaceVariant">#1E293B</item>
+
+        <!-- YAZI RENKLERİ (Okunabilirliğin Garantisi) -->
+        <item name="android:textColorPrimary">@color/dark_yazi_ana</item>
+        <item name="android:textColorSecondary">@color/dark_yazi_ikincil</item>
+        <item name="colorOnSurface">@color/dark_yazi_ana</item>
+    </style>
+
+    <style name="Theme.SahaRez" parent="Base.Theme.SahaRez" />
+</resources>

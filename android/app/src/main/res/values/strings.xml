@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SahaRez</string>
+    <string name="welcome_message">SahaRez\'e Hoş Geldiniz</string>
+    <string name="username_hint">Kullanıcı Adı</string>
+    <string name="password_hint">Şifre</string>
+    <string name="login_button">Giriş Yap</string>
+    <string name="register_text">Hesabın yok mu? Kayıt Ol</string>
+    <string name="logo_desc">Uygulama Logosu</string>
+
+    <string name="title_stats">Sistem İstatistikleri</string>
+    <string name="btn_select_date">Tarih Seç</string>
+    <string name="btn_reset">Sıfırla</string>
+
+    <string name="label_all_time">Gösterilen: Tüm Zamanlar</string>
+    <string name="label_total_bookings">Toplam Rezervasyon Sayısı</string>
+    <string name="label_financial_summary">Temel Finansal Özet</string>
+    <string name="label_court_revenue">Saha Geliri: 0₺</string>
+    <string name="label_cleats_revenue">Krampon Geliri: 0₺</string>
+    <string name="label_buffet_revenue">Büfe Geliri: 0₺</string>
+    <string name="label_total_revenue">TOPLAM CİRO: 0₺</string>
+
+    <string name="label_advanced_stats">Gelişmiş Analizler</string>
+    <string name="label_avg_revenue">Ortalama Seans Geliri: 0₺</string>
+    <string name="label_cleat_count">Kiralanan Krampon: 0 Adet</string>
+    <string name="label_avg_buffet">Maç Başı Büfe: 0₺</string>
+    <string name="label_side_income">Yan Gelir Oranı: %0</string>
+
+    <string name="stats_filter_all_time">Gösterilen: Tüm Zamanlar</string>
+    <string name="stats_filter_date">Gösterilen: %1$s</string>
+    <string name="stats_court_revenue">Saha Geliri: %1$.1f₺</string>
+    <string name="stats_cleats_revenue">Krampon Geliri: %1$.1f₺</string>
+    <string name="stats_buffet_revenue">Büfe Geliri: %1$.1f₺</string>
+    <string name="stats_total_revenue">TOPLAM CİRO: %1$.1f₺</string>
+
+    <string name="stats_avg_revenue">Ortalama Seans Geliri: %1$d₺</string>
+    <string name="stats_cleat_count">Kiralanan Krampon: %1$d Adet</string>
+    <string name="stats_avg_buffet">Maç Başı Büfe: %1$.1f₺</string>
+    <string name="stats_side_income">Yan Gelir Oranı: %%%1$d</string>
+
+    <string name="label_op_analysis">Saha ve Operasyon Analizi</string>
+    <string name="stats_popular_time">En Popüler Seans: %1$s</string>
+    <string name="stats_cancel_ratio">İptal Oranı: %%%1$d</string>
+    <string name="stats_occupancy_rate">Saha Doluluk Oranı: %%%1$d</string>
+    <string name="stats_occupancy_rate_empty">Saha Doluluk Oranı: - (Tarih Seçilmeli)</string>
+
+    <string name="stats_no_record">Seçili tarihte kayıt bulunamadı.</string>
+    <string name="stats_server_error">Sunucuya ulaşılamadı (Kod: %1$d)</string>
+    <string name="stats_error">Hata: %1$s</string>
+</resources>

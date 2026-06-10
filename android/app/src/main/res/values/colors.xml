@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Ortak Renkler -->
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+
+    <!-- SahaRez Ana Marka Renkleri (Halı Saha & Futbol Konsepti) -->
+    <color name="saha_yesili_koyu">#166534</color> <!-- Gündüz modu için tok, ciddi çim yeşili -->
+    <color name="saha_yesili_parlak">#10B981</color> <!-- Gece modu için parlayan zümrüt/neon yeşili -->
+    <color name="saha_yesili_vurgu">#22C55E</color> <!-- Aksiyon butonları için canlı yeşil -->
+
+    <!-- Gündüz Modu (Gündüz maçı: ferah ve aydınlık) -->
+    <color name="light_arkaplan">#F4F7F6</color> <!-- Göz yormayan çok açık ferah gri -->
+    <color name="light_yuzey">#FFFFFF</color> <!-- Kartlar ve pencereler için saf beyaz -->
+    <color name="light_yazi_ana">#0F172A</color> <!-- Saf siyah yerine çok koyu lacivert/siyah (Daha profesyonel) -->
+    <color name="light_yazi_ikincil">#64748B</color> <!-- Okunabilir mat gri -->
+
+    <!-- Gece Modu (Gece maçı: premium ve odaklayıcı) -->
+    <color name="dark_arkaplan">#0B1120</color> <!-- Gece mavisine çalan çok derin siyah -->
+    <color name="dark_yuzey">#151E2E</color> <!-- Arkaplandan bir tık daha açık kart rengi -->
+    <color name="dark_yazi_ana">#F8FAFC</color> <!-- Göz almayan kırık beyaz -->
+    <color name="dark_yazi_ikincil">#94A3B8</color> <!-- Okunabilir açık gümüş gri -->
+</resources>

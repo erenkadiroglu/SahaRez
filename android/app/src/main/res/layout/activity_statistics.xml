@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/colorBackground">
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/title_stats"
+        android:textColor="?android:attr/textColorPrimary"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/layoutFilters"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/textTitle">
+
+        <Button
+            android:id="@+id/btnFilterDate"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="?attr/colorPrimary"
+            android:text="@string/btn_select_date"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btnClearFilter"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:backgroundTint="#757575"
+            android:text="@string/btn_reset"
+            android:textColor="@android:color/white"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvCurrentFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/label_all_time"
+            android:textColor="?attr/colorPrimary"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical"
+        android:weightSum="4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layoutFilters">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardTotalBookings"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="12dp"
+            android:layout_weight="1"
+            app:cardBackgroundColor="?attr/colorSurface"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="3dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_total_bookings"
+                    android:textColor="?android:attr/textColorSecondary"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textTotalCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:textColor="?android:attr/textColorPrimary"
+                    android:textSize="42sp"
+                    android:textStyle="bold"
+                    tools:text="4" />
+
+                <ProgressBar
+                    android:id="@+id/progressBarStats"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardFinancialSummary"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="12dp"
+            android:layout_weight="1"
+            app:cardBackgroundColor="?attr/colorSurface"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="3dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingHorizontal="24dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/label_financial_summary"
+                    android:textColor="?android:attr/textColorPrimary"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvCourtRevenue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:text="@string/label_court_revenue"
+                    android:textColor="?android:attr/textColorSecondary"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tvCleatsRevenue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:text="@string/label_cleats_revenue"
+                    android:textColor="?android:attr/textColorSecondary"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tvBuffetRevenue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/label_buffet_revenue"
+                    android:textColor="?android:attr/textColorSecondary"
+                    android:textSize="15sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="?attr/colorSurfaceVariant" />
+
+                <TextView
+                    android:id="@+id/tvTotalRevenue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_total_revenue"
+                    android:textColor="?attr/colorPrimary"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardAdvancedStats"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="12dp"
+            android:layout_weight="1"
+            app:cardBackgroundColor="?attr/colorSurface"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="3dp">
+
+            <!-- Buradaki fazladan arkaplan rengi kodunu kaldırdık, artık diğer kartlarla aynı yüzey rengini alacak -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingHorizontal="24dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/label_advanced_stats"
+                    android:textColor="?android:attr/textColorPrimary"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvAvgRevenue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:text="@string/label_avg_revenue"
+                    android:textColor="?android:attr/textColorSecondary"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tvCleatCount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:text="@string/label_cleat_count"
+                    android:textColor="?android:attr/textColorSecondary"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tvAvgBuffet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/label_avg_buffet"
+                    android:textColor="?android:attr/textColorSecondary"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tvSideIncomeRatio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_side_income"
+                    android:textColor="?attr/colorPrimary"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:cardBackgroundColor="?attr/colorSurface"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="3dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingHorizontal="24dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/label_op_analysis"
+                    android:textColor="?android:attr/textColorPrimary"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvPopularTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:text="En Popüler Seans: -"
+                    android:textColor="?android:attr/textColorSecondary"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tvCancelRatio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="İptal Oranı: %0"
+                    android:textColor="?android:attr/textColorSecondary"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tvOccupancyRate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Saha Doluluk Oranı: -"
+                    android:textColor="?attr/colorPrimary"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

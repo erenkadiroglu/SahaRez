@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/tvAdDialogTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="İlan Ver"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="?attr/colorPrimary"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="İlan Türünü Seçiniz:"
+        android:textSize="16sp"
+        android:textColor="?android:attr/textColorPrimary" />
+
+    <RadioGroup
+        android:id="@+id/rgAdType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <RadioButton
+            android:id="@+id/rbLookingForOpponent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rakip Aranıyor"
+            android:textColor="?android:attr/textColorPrimary"
+            android:layout_marginEnd="16dp"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/rbMissingPlayer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="?android:attr/textColorPrimary"
+            android:text="Oyuncu Eksik"/>
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/llMissingPlayerDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/etMissingCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Kaç Kişi Eksik? (Örn: 2)"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textColorHint="?android:attr/textColorSecondary"
+            android:inputType="number"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/etMissingPosition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Hangi Mevki? (Örn: Kaleci, Defans)"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textColorHint="?android:attr/textColorSecondary"
+            android:inputType="textPersonName"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="?android:attr/colorBackground"
+    android:padding="24dp"
+    android:gravity="center_horizontal">
+
+    <ImageView
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="32dp"
+        app:tint="?attr/colorPrimary"
+        android:src="@drawable/ic_team" />
+
+    <TextView
+        android:id="@+id/textWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Kontrol Paneli"
+        android:textColor="?android:attr/textColorPrimary"
+        android:textSize="28sp"
+        android:letterSpacing="0.02"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textRole"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="48dp"
+        android:text="Saha Görevlisi Girişi Yapıldı"
+        android:textColor="?android:attr/textColorSecondary" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnGoToBookings"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginBottom="16dp"
+        android:text="Saha ve Rezervasyonlar"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="?attr/colorPrimary"
+        app:cornerRadius="16dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnGoToStatistics"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginBottom="16dp"
+        android:text="Sistem İstatistikleri"
+        android:textColor="?android:attr/textColorPrimary"
+        app:strokeColor="?android:attr/textColorSecondary"
+        app:strokeWidth="1.5dp"
+        app:cornerRadius="16dp"
+        android:visibility="gone"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnGoToWaitingList"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginBottom="16dp"
+        android:text="Sıralı Bekleme Listesi"
+        android:textColor="?android:attr/textColorPrimary"
+        app:strokeColor="?android:attr/textColorSecondary"
+        app:strokeWidth="1.5dp"
+        app:cornerRadius="16dp"
+        android:visibility="gone"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnLogout"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Güvenli Çıkış Yap"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#EF4444" />
+</LinearLayout>
